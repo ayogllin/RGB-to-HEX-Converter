@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<title>RGB to HEX Converter</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <span class="navbar-brand mb-0 h1">RGB to HEX Converter</span>
+    </div>
+  </nav>
+
+	<div class="form-container row">
+		<div class="rgb col-sm-5">
+			<div class="rgb-title">
+				<h3>RGB</h3>
+			</div>
+			<form>
+	  		<div class="form-row mb-3">
+			    <label for="r-space" class="col-form-label">R:</label>
+			    <div class="col-sm-7">
+			      <input type="text"  class="form-control" id="r-input" placeholder="R" required>
+			    </div>
+			    <div class="r-color"></div>
+	  		</div>
+	  		<div class="form-row mb-3">
+			    <label for="g-space" class="col-form-label">G:</label>
+			    <div class="col-sm-7">
+			      <input type="text"  class="form-control" id="g-input" placeholder="G" required>
+			    </div>
+			    <div class="g-color"></div>
+	  		</div>
+	  		<div class="form-row mb-3">
+			    <label for="b-space" class="col-form-label">B:</label>
+			    <div class="col-sm-7">
+			      <input type="text" class="form-control" id="b-input" placeholder="B" required>
+			    </div>
+			    <div class="b-color"></div>
+	  		</div>
+	  		<div class="form-row">
+      		<button type="submit" class="btn btn-primary btn-convert">Convert</button>
+    		</div>
+			</form>
+		</div>
+		<div class="hex col-sm-4">
+			<div class="hex-title">
+				<h3>HEX</h3>
+			</div>
+			<div class="hex-space col-sm-8 p-0 mb-3">
+				<div class="hex-content-div">
+					<span class="hex-content"></span>
+				</div>
+			</div>
+			<div class="hex-color"></div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
